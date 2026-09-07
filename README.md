@@ -2,6 +2,8 @@
 
 SignalDesk is a stateful incident-response copilot built entirely on Cloudflare. It gives an incident team one durable war room where an AI assistant can summarize evidence, maintain the timeline, assign actions, schedule updates, and request approval before resolving an incident.
 
+**[Open the live SignalDesk demo](https://signaldesk.siddharth190820.workers.dev)**
+
 ## Assignment coverage
 
 | Requirement             | Implementation                                                                             |
@@ -79,7 +81,7 @@ The unit suite covers initial state, immutable timeline updates, resolution audi
 ## Deploy
 
 ```bash
-pnpm deploy
+pnpm run deploy
 ```
 
 Wrangler creates the SQLite-backed Durable Object namespace from the `v1` migration and deploys both the Worker and static client. After deployment, verify:
